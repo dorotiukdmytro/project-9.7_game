@@ -39,6 +39,7 @@ function setGameElements() {
 	        resultsElem.style.display = 'none';
 	  }
 	}
+setGameElements();
 
 var playerPointsElem = document.getElementById('js-playerPoints'),
     playerNameElem = document.getElementById('js-playerName'),
@@ -67,7 +68,6 @@ var playerPickElem = document.getElementById('js-playerPick'),
     computerResultElem = document.getElementById('js-computerResult');
 
 function playerPick(playerPick) {
-	console.log(playerPick);
     var computerPick = getComputerPick();
 
     playerPickElem.innerHTML = playerPick;
